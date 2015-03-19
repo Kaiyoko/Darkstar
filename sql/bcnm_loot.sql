@@ -1686,8 +1686,7 @@ INSERT INTO `bcnm_loot` VALUES ('180','17945','9','2');
 INSERT INTO `bcnm_loot` VALUES ('180','17467','6','2');
 INSERT INTO `bcnm_loot` VALUES ('180','13690','105','2');
 INSERT INTO `bcnm_loot` VALUES ('180','13109','12','2');
-INSERT INTO `bcnm_loot` VALUES ('180','17829','1','3');
-INSERT INTO `bcnm_loot` VALUES ('180','13690','1','3');
+
 
 
 
