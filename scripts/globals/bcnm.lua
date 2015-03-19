@@ -393,18 +393,25 @@ function checkNonTradeBCNM(player,npc)
 	    	 mask = GetBattleBitmask(640,Zone,1);
 	         player:setVar("trade_bcnmid",640);
 		end
-	elseif(Zone == 8) then -- Boneyard_Gully
+	elseif(Zone == 8) then -- Boneyard_Gully					
+		--[[cutscene 32000 0 0 0 param		-	combine the numbers to make a multiselect menu.
+			1 		= Head Wind
+			2 		= Like the Wind
+			4 		= Sheep in Antlion's Clothing
+			8 		= Shall We Dance?
+			16	= Totentanz
+			32	= Tango with a Tracker (http://wiki.ffxiclopedia.org/wiki/Tango_with_a_Tracker)
+			64	= Requiem of Sin (http://wiki.ffxiclopedia.org/wiki/Requiem_of_Sin)
+			128	= Antagonistic Ambuscade (http://wiki.ffxiclopedia.org/wiki/Antagonistic_Ambuscade - post 75 shit)
+			256	= (STAR)Head Wind	]]	
 	   	if(player:getCurrentMission(COP) == THREE_PATHS  and  player:getVar("COP_Ulmia_s_Path") == 5) then --head_wind
-	    	 mask = GetBattleBitmask(672,Zone,1);
+	    	 mask = GetBattleBitmask(672,Zone,1); -- Should be 1
 	         player:setVar("trade_bcnmid",672);
 		elseif (player:hasKeyItem(MIASMA_FILTER)==true) then
-			mask = GetBattleBitmask(673,Zone,1);
-			if (mask==1) then				
-				player:setVar("trade_bcnmid",673);
-			elseif (mask==2) then
-				player:setVar("trade_bcnmid",674);
-			end
-		else
+			 -- The requirements are the same and multi-bc menu doesn't work, as the cs option isn't sent through. Forcing a single battlefield event by random selection.
+			local randMask = math.random(2,5);	-- 4 ENMs require MIASMA_FILTER
+			player:setVar("trade_bcnmid",671+randMask);
+			mask = math.pow(2,randMask-1);
 		end
 	elseif(Zone == 10) then -- The_Shrouded_Maw
 	    if(player:getCurrentMission(COP) == DARKNESS_NAMED  and  player:getVar("PromathiaStatus") == 2) then--DARKNESS_NAMED
