@@ -24,6 +24,13 @@ function onMobInitialize(mob)
 end;
 
 -----------------------------------
+-- onMobInitialize Action
+-----------------------------------
+function onPath(mob)
+	pathfind.patrol(mob, path);
+end;
+
+-----------------------------------
 -- onMobSpawn Action
 -----------------------------------
 
