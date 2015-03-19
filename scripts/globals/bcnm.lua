@@ -46,7 +46,7 @@ itemid_bcnmid_map = { 6,{0,0},-- Bearclaw_Pinnacle
 -- The paramid is a bitmask which you need to find out. Being a bitmask, it will be one of:
 -- 0,1,2,3,4,5,...
 bcnmid_param_map = {6,{640,0},
-                    8,{672,0,673,1},
+                    8,{672,0,673,1,674,2},
                     10,{704,0,706,2},
                     13,{736,0},
                     17,{768,0},
@@ -399,7 +399,11 @@ function checkNonTradeBCNM(player,npc)
 	         player:setVar("trade_bcnmid",672);
 		elseif (player:hasKeyItem(MIASMA_FILTER)==true) then
 			mask = GetBattleBitmask(673,Zone,1);
-			player:setVar("trade_bcnmid",673);
+			if (mask==1) then				
+				player:setVar("trade_bcnmid",673);
+			elseif (mask==2) then
+				player:setVar("trade_bcnmid",674);
+			end
 		else
 		end
 	elseif(Zone == 10) then -- The_Shrouded_Maw
