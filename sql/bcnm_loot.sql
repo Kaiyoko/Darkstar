@@ -1677,14 +1677,14 @@ INSERT INTO `bcnm_loot` VALUES ('179','16976','100','3');
 INSERT INTO `bcnm_loot` VALUES ('179','4990','230','3');
 
 -- ENM Sheep in Antlion's Clothing
-INSERT INTO `bcnm_loot` VALUES ('180','1763','340','1');
-INSERT INTO `bcnm_loot` VALUES ('180','1769','270','1');
-INSERT INTO `bcnm_loot` VALUES ('180','1764','270','1');
-INSERT INTO `bcnm_loot` VALUES ('180','1842','60','0');
+INSERT INTO `bcnm_loot` VALUES ('180','1763','34','1');
+INSERT INTO `bcnm_loot` VALUES ('180','1769','27','1');
+INSERT INTO `bcnm_loot` VALUES ('180','1764','27','1');
+INSERT INTO `bcnm_loot` VALUES ('180','1842','6','0');
 INSERT INTO `bcnm_loot` VALUES ('180','17829','8','2');
 INSERT INTO `bcnm_loot` VALUES ('180','17945','9','2');
 INSERT INTO `bcnm_loot` VALUES ('180','17467','6','2');
-INSERT INTO `bcnm_loot` VALUES ('180','13690','105','2');
+INSERT INTO `bcnm_loot` VALUES ('180','13690','10','2');
 INSERT INTO `bcnm_loot` VALUES ('180','13109','12','2');
 
 
