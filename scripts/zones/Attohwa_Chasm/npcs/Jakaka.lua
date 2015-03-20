@@ -38,6 +38,7 @@ end;
 -----------------------------------
 
 function onEventFinish(player,csid,option)
+	end
 	-- printf("CSID: %u",csid);
 	-- printf("RESULT: %u",option);
 end;

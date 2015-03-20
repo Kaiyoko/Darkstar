@@ -1687,6 +1687,17 @@ INSERT INTO `bcnm_loot` VALUES ('180','17467','6','2');
 INSERT INTO `bcnm_loot` VALUES ('180','13690','10','3');
 INSERT INTO `bcnm_loot` VALUES ('180','13109','12','3');
 
+-- ENM Shall We Dance?
+INSERT INTO `bcnm_loot` VALUES ('181'.'1762','620','0');
+INSERT INTO `bcnm_loot` VALUES ('181'.'1767','670','0'):
+INSERT INTO `bcnm_loot` VALUES ('181'.'1771','740','0'):
+INSERT INTO `bcnm_loot` VALUES ('181'.'18015','760','1');
+INSERT INTO `bcnm_loot` VALUES ('181'.'4990','760','1');
+INSERT INTO `bcnm_loot` VALUES ('181'.'1842','810','2');
+INSERT INTO `bcnm_loot` VALUES ('181'.'17365','810','1');
+INSERT INTO `bcnm_loot` VALUES ('181'.'18099','850','1');
+
+
 
 
 
